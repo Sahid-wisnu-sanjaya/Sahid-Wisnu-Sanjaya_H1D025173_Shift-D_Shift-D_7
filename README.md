@@ -50,4 +50,5 @@ Penerapan 10 konsep teknis pada sistem:
 > `java Main`
 
 # Hasil Output
-![Hasil Output Responsi](./Screenshot%202026-11-07%20212540.png)
+<img width="565" height="660" alt="Screenshot 2026-11-07 232229" src="https://github.com/user-attachments/assets/9ab4cf97-611d-4ffa-a57b-ef198aa41997" />
+
