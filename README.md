@@ -11,7 +11,7 @@ SHIFT AKHIR : D
 1. **Inisialisasi & Pembuatan Objek**  
    Program dijalankan melalui class `Main.java` yang membuat dua objek pegawai RS Kuru Kuru dari abstract class `PegawaiRS`: Dokter **dr. Hatsune Miku** (`Dokter`) spesialis anak dan Perawat **Budi, S.Kep** (`Perawat`) di Ruang Mawar.
 2. **Informasi Awal Pegawai**  
-   Menampilkan informasi lengkap masing-masing pegawai (ID, nama, jam kerja, tarif, jabatan, bonus/shift) menggunakan method `tampilkanInformasi()` yang di-*override* pada subclass dengan memanggil `super.tampilkanInformasi()`.
+   Menampilkan informasi lengkap masing-masing pegawai (ID, nama, jam kerja, tarif, jabatan, bonus/shift) menggunakan method `tampilkanInformasi()` yang di-override pada subclass dengan memanggil `super.tampilkanInformasi()`.
 3. **Simulasi Pelayanan Pasien & Perubahan State**  
    Objek `drHatsune` memanggil method `rawatPasien()` beberapa kali untuk menambah nilai state `jumlahPasien`. Perubahan state ini memicu recalculation gaji via `prosesGaji()` dan logika percabangan `if-else` (memberikan Bonus Kinerja Terlampaui Rp500.000 saat `jumlahPasien > 10`).
 4. **Proses Gaji & Tunjangan Shift**  
@@ -38,15 +38,16 @@ Penerapan 10 konsep teknis pada sistem:
 # Cara Menjalankan Program
 
 ## 1. Clone Repository Github
-```bash
-git clone [https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru](https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru)
-2. Masuk ke Folder Repository
-Bash
-cd RumahSakitKuruKuru
-3. Compile Program
-Bash
-javac *.java
-4. Jalankan Program
-Bash
-java Main
-Hasil Output
+> `git clone [https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru](https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru)`
+
+## 2. Masuk ke Folder Repository
+> `cd RumahSakitKuruKuru`
+
+## 3. Compile Program
+> `javac *.java`
+
+## 4. Jalankan Program
+> `java Main`
+
+# Hasil Output
+![Hasil Output Responsi](./Screenshot%202026-11-07%20212540.png)
