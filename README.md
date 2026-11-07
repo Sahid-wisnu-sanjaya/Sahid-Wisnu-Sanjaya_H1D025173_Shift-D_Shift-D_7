@@ -8,36 +8,18 @@ SHIFT AKHIR : D
 # Tema Sistem Rumah Sakit (RS Kuru Kuru)
 ## Alur Program
 
-1. **Inisialisasi**
-2. Program dijalankan melalui class `Main.java`. Class ini menginstansiasi objek `Dokter` (`drHatsune`) dan `Perawat` (`prwBudi`) di **RS Kuru Kuru** yang merupakan subclass dari abstract class `PegawaiRS`.
-3. **Pembuatan Objek Pegawai & Dokter**
-4. Di dalam class `Main`, program membuat dua objek pegawai rumah sakit:
-   - Dokter bernama **dr. Hatsune Miku** (`Dokter`) spesialis anak dengan tarif awal dan jumlah pasien awal 8.
-   - Perawat bernama **Budi, S.Kep** (`Perawat`) di Ruang Mawar yang bertugas pada shift malam.
-5. **Informasi Awal Pegawai**
-   - ID Pegawai.
-   - Nama Pegawai/Dokter.
-   - Jam Kerja & Tarif Per Jam.
-   - Jabatan & Spesialisasi / Ruang Jaga.
-   - Jumlah Pasien yang Ditangani / Status Shift Malam.
-   - Total Gaji Awal & Bonus Kinerja.
-   - Informasi ini ditampilkan memanfaatkan method `tampilkanInformasi()` yang di-*override* di masing-masing subclass dengan memanggil `super.tampilkanInformasi()`.
-6. **Simulasi Pelayanan Pasien & Perubahan State**
-7. Objek `drHatsune` menjalankan method `rawatPasien()` beberapa kali untuk mensimulasikan penanganan pasien baru:
-   - Setiap panggilan `rawatPasien()` menambah nilai state `jumlahPasien`.
-   - Perubahan state ini memicu perhitungan ulang gaji pada method `prosesGaji()`.
-   - Logika percabangan `if-else` mengevaluasi batas pasien: jika `jumlahPasien > 10`, dokter mendapatkan Bonus Kinerja Terlampaui (Rp500.000).
-8. **Proses Gaji & Tunjangan Shift**
-9. Gaji diproses berdasarkan jam kerja, tarif per jam, serta kondisi khusus subclass:
-   - Dokter mendapatkan bonus kinerja tambahan berdasarkan akumulasi jumlah pasien.
-   - Perawat mendapatkan tunjangan tambahan shift malam (Rp150.000) jika `isShiftMalam` bernilai `true`.
-10. **Polimorfisme & Multiple Interface**
-11. Menguji eksekusi method melalui variabel referensi bertipe interface `LayananKesehatan` dan `SistemTagihan`:
-    - Referensi `LayananKesehatan` memanggil `rawatPasien()` pada objek `Dokter` dan `Perawat`.
-    - Class `Dokter` mengimplementasikan dua interface sekaligus (`implements LayananKesehatan, SistemTagihan`).
-    - Referensi `SistemTagihan` memanggil `hitungTotalBiaya()` untuk menghitung total estimasi tagihan dokter berdasarkan jumlah pasien.
-12. **Menampilkan Rekapitulasi Akhir**
-13. Program mencetak status akhir total pasien dan kalkulasi estimasi tagihan secara rapi di konsol.
+1. **Inisialisasi & Pembuatan Objek**  
+   Program dijalankan melalui class `Main.java` yang membuat dua objek pegawai RS Kuru Kuru dari abstract class `PegawaiRS`: Dokter **dr. Hatsune Miku** (`Dokter`) spesialis anak dan Perawat **Budi, S.Kep** (`Perawat`) di Ruang Mawar.
+2. **Informasi Awal Pegawai**  
+   Menampilkan informasi lengkap masing-masing pegawai (ID, nama, jam kerja, tarif, jabatan, bonus/shift) menggunakan method `tampilkanInformasi()` yang di-*override* pada subclass dengan memanggil `super.tampilkanInformasi()`.
+3. **Simulasi Pelayanan Pasien & Perubahan State**  
+   Objek `drHatsune` memanggil method `rawatPasien()` beberapa kali untuk menambah nilai state `jumlahPasien`. Perubahan state ini memicu recalculation gaji via `prosesGaji()` dan logika percabangan `if-else` (memberikan Bonus Kinerja Terlampaui Rp500.000 saat `jumlahPasien > 10`).
+4. **Proses Gaji & Tunjangan Shift**  
+   Masing-masing subclass memproses gaji sesuai ketentuannya: Dokter menghitung bonus akumulasi pasien, sedangkan Perawat menambahkan tunjangan shift malam (Rp150.000) jika `isShiftMalam` bernilai `true`.
+5. **Polimorfisme & Multiple Interface**  
+   Menguji eksekusi method melalui variabel referensi interface `LayananKesehatan` dan `SistemTagihan`. Interface `LayananKesehatan` memanggil `rawatPasien()`, sementara `SistemTagihan` (diimplementasikan oleh `Dokter` bersama interface lainnya) memanggil `hitungTotalBiaya()`.
+6. **Menampilkan Rekapitulasi Akhir**  
+   Program mencetak rekapitulasi status akhir total pasien dan kalkulasi estimasi tagihan secara rapi di konsol.
 
 ## Fitur Program
 
@@ -57,7 +39,7 @@ Penerapan 10 konsep teknis pada sistem:
 
 ## 1. Clone Repository Github
 ```bash
-git clone https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru
+git clone [https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru](https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru)
 2. Masuk ke Folder Repository
 Bash
 cd RumahSakitKuruKuru
