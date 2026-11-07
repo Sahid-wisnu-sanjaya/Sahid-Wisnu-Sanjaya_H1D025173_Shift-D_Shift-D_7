@@ -38,16 +38,16 @@ Penerapan 10 konsep teknis pada sistem:
 # Cara Menjalankan Program
 
 ## 1. Clone Repository Github
-> `git clone [https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru](https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru)`
+`git clone [https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru](https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru)`
 
 ## 2. Masuk ke Folder Repository
-> `cd RumahSakitKuruKuru`
+`cd RumahSakitKuruKuru`
 
 ## 3. Compile Program
-> `javac *.java`
+`javac *.java`
 
 ## 4. Jalankan Program
-> `java Main`
+`java Main`
 
 # Hasil Output
 <img width="565" height="660" alt="Screenshot 2026-11-07 232229" src="https://github.com/user-attachments/assets/9ab4cf97-611d-4ffa-a57b-ef198aa41997" />
