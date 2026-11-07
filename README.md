@@ -58,3 +58,16 @@ Penerapan 10 konsep teknis pada sistem:
 ## 1. Clone Repository Github
 ```bash
 git clone [https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru](https://github.com/Sahid-wisnu-sanjaya/RumahSakitKuruKuru)
+
+## 2. Masuk ke Folder Repository
+'''Bash
+cd RumahSakitKuruKuru
+
+3. Compile Program
+Bash
+javac *.java
+
+4. Jalankan Program
+Bash
+java Main
+Hasil Output
